@@ -2,7 +2,7 @@ FROM sherzberg/python-all-dev
 MAINTAINER Spencer Herzberg "spencer.herzberg@gmail.com"
 
 # needed for python-pip
-#RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -qq -y \
     python-pip \
